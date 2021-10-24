@@ -1,0 +1,32 @@
+{
+  "name": "mern-tasks-servidor",
+  "version": "1.0.0",
+  "description": "MERN APIs para MERN Tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabdlr/react-project-11-server.git"
+  },
+  "keywords": [
+    "mern",
+    "api"
+  ],
+  "author": "gabriel de los rios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabdlr/react-project-11-server/issues"
+  },
+  "homepage": "https://github.com/gabdlr/react-project-11-server#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  }
+}
