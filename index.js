@@ -9,7 +9,7 @@ const app = express();
 conectarDB();
 
 //Habilitar Cors
-app.use(cors());
+app.use(cors({ credentials: true, origin: true}));
 
 //Habilitar express.json
 //Si usamos header Content-Type: application/json nos va a permetir leerlo
