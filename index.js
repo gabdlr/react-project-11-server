@@ -20,7 +20,6 @@ app.use(express.json({ extended: true }));
 const port = process.env.port || 4000 //Asigna un puerto, lo busca en el env, si no lo encuentra le asigna el 4000
 
 //Importar rutas
-app.use(cors());
 app.use("/api/usuarios", require("./routes/usuarios"));
 app.use("/api/auth", require("./routes/auth") );
 app.use("/api/proyectos", require("./routes/proyectos") );
