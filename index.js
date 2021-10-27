@@ -17,7 +17,7 @@ app.use(express.json({ extended: true }));
 
 //Esto es asi porque si (estamos adaptando a HEROKU)
 //puerto del app
-const PORT = process.env.PORT || 4000 //Asigna un puerto, lo busca en el env, si no lo encuentra le asigna el 4000
+const port = process.env.port || 4000 //Asigna un puerto, lo busca en el env, si no lo encuentra le asigna el 4000
 
 //Importar rutas
 app.use("/api/usuarios", require("./routes/usuarios"));
@@ -26,6 +26,6 @@ app.use("/api/proyectos", require("./routes/proyectos") );
 app.use("/api/tareas", require("./routes/tareas") );
 
 //arrancar la app
-app.listen(PORT, () => {
-    console.log(`El servidor esta funcionando en el puerto ${PORT}`);
+app.listen(port, () => {
+    console.log(`El servidor esta funcionando en el puerto ${port}`);
 })
