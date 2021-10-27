@@ -9,7 +9,8 @@ const app = express();
 conectarDB();
 
 //Habilitar Cors
-app.use(cors());
+// app.use(cors());
+app.options('*', cors()) // include before other routes
 
 //Habilitar express.json
 //Si usamos header Content-Type: application/json nos va a permetir leerlo
