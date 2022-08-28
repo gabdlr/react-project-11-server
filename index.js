@@ -9,8 +9,10 @@ const app = express();
 conectarDB();
 
 //Habilitar Cors
-// app.use(cors());
-app.options('*', cors()) // include before other routes
+app.use(cors({
+        origin: 'https://gabreactmerntasks.netlify.app/'
+    })
+);
 
 //Habilitar express.json
 //Si usamos header Content-Type: application/json nos va a permetir leerlo
