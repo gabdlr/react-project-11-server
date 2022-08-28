@@ -10,7 +10,7 @@ conectarDB();
 
 //Habilitar Cors
 app.use(cors({
-        origin: 'https://gabreactmerntasks.netlify.app/'
+        origin: 'https://gabreactmerntasks.netlify.app'
     })
 );
 
